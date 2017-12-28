@@ -3,7 +3,7 @@ import click
 @click.command()
 @click.option('--count', default=1, help='universalgates')
 @click.option(
-    def __init__(self, *args):
+def __init__(self, *args):
         """ initialise the class """
         self.input = args
         self.output = None
