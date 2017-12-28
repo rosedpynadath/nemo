@@ -4,6 +4,7 @@
 
 import click
 import os
+main()
 
 @click.command()
 @click.option('nand',type = (bool))
