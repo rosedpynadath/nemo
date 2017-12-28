@@ -1,6 +1,8 @@
-class Gate(object):
-    """ class representing a gate. It can be any gate. """
+import click
 
+@click.command()
+@click.option('--count', default=1, help='universalgates')
+@click.option(
     def __init__(self, *args):
         """ initialise the class """
         self.input = args
