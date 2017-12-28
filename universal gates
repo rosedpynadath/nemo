@@ -1,12 +1,16 @@
+
+
+#!/usr/bin/env python
+
 import click
 
 @click.command()
-@click.option('--count', default=1, help='universalgates')
+@click.option(help='universalgates')
 @click.option(
 def __init__(self, *args):
         """ initialise the class """
         self.input = args
-        self.output = None
+        self.output = None)
 
     def logic(self):
         """ the intelligence to be performed """
