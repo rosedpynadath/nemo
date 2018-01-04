@@ -1,0 +1,22 @@
+cube = [20,20] 
+#defining the size of the grid cube 
+def grid(cube):
+#defining the funtion of grid 
+    if cube == [0,0]: return 1
+#if the cube size is less than 0,return 1 and the number of route is zero
+    routes = 0
+    if cube[0] > 0:
+#when the cube index is at 0 and the value at index 0 is greater than 0, then enter the if loop and perform the condition
+#number of routes is determined
+       routes = routes + grid([cube[0]-1,cube[1]])
+    if cube[1] > 0:
+#when the cube index 1 has value greater than 0 enter into the if statement and execute the condition   
+#find the number of routes
+       routes = routes + grid([cube[0],cube[1]-1])
+#the routes from both the if statements are added and total number of routes are stored in result       
+    return routes
+result = grid(cube)
+print(result)
+# equation to find the number of paths :
+# from the statements of if
+#Eg :- routes of grid(2,3) + routes of  grid(3,2) = routes of grid(3,3)
