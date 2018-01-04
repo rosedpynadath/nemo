@@ -3,7 +3,7 @@ cube = [20,20]
 def grid(cube):
 #defining the funtion of grid 
     if cube == [0,0]: return 1
-#if the cube size is less than 0,return 1 and the number of route is zero
+#if the cube values at index 0 and index 1  is less than 0,return 1 and the number of route is zero
     routes = 0
     if cube[0] > 0:
 #when the cube index is at 0 and the value at index 0 is greater than 0, then enter the if loop and perform the condition
