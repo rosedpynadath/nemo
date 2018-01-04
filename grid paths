@@ -1,4 +1,4 @@
-cube = [12,12] 
+cube = [13,13] 
 #defining the size of the grid cube 
 def grid(cube):
 #defining the funtion of grid 
