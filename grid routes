@@ -17,3 +17,5 @@ def grid(m,n):
 # equation to find the number of routes :
 # from the statements of if
 #Eg :- routes of grid(2,3) + routes of  grid(3,2) = routes of grid(3,3)
+grid(20,20)
+#when executed grid(20,20) the number of routes from top left corner to bottom right corner of the grid(20,20) is determined
