@@ -1,3 +1,6 @@
+#!/ usr/bin/env python
+
+
 def grid(m,n):
 #defining the funtion of grid with size m number of rwos and n number of columns
     if m == 0 or n==0: return 1
