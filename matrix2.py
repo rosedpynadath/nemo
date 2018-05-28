@@ -6,16 +6,17 @@ import scipy.misc
 from scipy import misc
 import tensorflow as tf
 
-sess = tf.InteractiveSession()#The only difference between Session and an InteractiveSession is that InteractiveSession makes itself the default session so that you can call run() or eval() without explicitly calling the session.
+sess = tf.InteractiveSession()#The only difference between Session and an 
+#InteractiveSession is that InteractiveSession makes itself the default session so that you can call run() or eval() without explicitly calling the session.
 #because it avoids having to pass an explicit Session object to run operations.sess.run(m1)
-,
+
 matrix1 = tf.constant([[3., 3.]])# 3. means 3.0,   Tensor("Const:0", shape=(1, 2), dtype=float32)
 matrix2 = tf.constant([[2.],[2.]])#Tensor("Const_1:0", shape=(2, 1), dtype=float32)
 product = tf.matmul(matrix1, matrix2)
 #print the product
 print(product.eval())#[[12.]]
 
-#close the session to release resources
+#close the session to release resources-------------------------------------***----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 sess.close()
 matrix1 = tf.constant([[3., 3.]])
@@ -28,8 +29,7 @@ sess = tf.Session()
 sess.run(init)
 
 print(sess.run([product]))
-
-
+#close the session-----------------------------------------------------------***----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 import tensorflow as tf
 sess = tf.InteractiveSession() # see the answers above :)
 x = [[1.,2.,1.],[1.,1.,1.]]    # a 2D matrix as input to softmax, [[1.0, 2.0, 1.0], [1.0, 1.0, 1.0]], x matrix
