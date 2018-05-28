@@ -33,11 +33,12 @@ print(sess.run([product]))
 import tensorflow as tf
 sess = tf.InteractiveSession() # see the answers above :)
 x = [[1.,2.,1.],[1.,1.,1.]]    # a 2D matrix as input to softmax, [[1.0, 2.0, 1.0], [1.0, 1.0, 1.0]], x matrix
-y = tf.nn.softmax(x)           # this is the softmax function,Tensor("Softmax:0", shape=(2, 3), dtype=float32),The softmax function is often used in the final layer of a neural network-based classifier
+y = tf.nn.softmax(x)           # this is the softmax function,Tensor("Softmax:0", shape=(2, 3), dtype=float32),The softmax function is often used in the final layer of a neural network-based classifier.
+                               #In building neural networks softmax functions used in different layer level.
                                # we can put any function to y
 u = y.eval()
 print(u) #[[0.21194157 0.5761169  0.21194157]
-#          [0.33333334 0.33333334 0.33333334]] u matrix with shape = [2,3]  2 rows, 3 columns
+#          [0.33333334 0.33333334 0.33333334]] u matrix with shape = [2,3]  2 rows, 3 columns matrix
 
 
 
