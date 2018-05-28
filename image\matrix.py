@@ -4,7 +4,7 @@ from scipy import misc
 img = misc.imread('/Users/rosedpynadath/Desktop/thanos.jpeg')
 
 
-img_tf = tf.Variable(img)
+img_tf = tf.Variable(img)          # define a variable to hold image
 print(img_tf.get_shape().as_list())# print the shape of the matrix of the thanos in list 
 img = plt.imread('thanos.jpeg')
 plt.imshow(img)
@@ -19,8 +19,9 @@ img_tf = tf.Variable(img_red)
 print(img_tf.get_shape().as_list())# shape of the matrix in list, of the gray  thanos 
 
 #***********************************************
-img_tiny = img[::6, ::6]     # accessing the picture matix
-plt.imshow(img_tiny, interpolation='nearest')
+img_tiny = img[::6, ::6]                     # accessing the picture matix
+plt.imshow(img_tiny, interpolation='nearest')#interpolation = ‘none’ works well when a big image is scaled down, 
+                                             #while interpolation = ‘nearest’ works well when a small image is scaled up
 img_tf = tf.Variable(img_tiny) 
                              # shape of the matrix in list, of tiny version of thanos
 print(img_tf.get_shape().as_list())
